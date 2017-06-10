@@ -11,11 +11,17 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
+    <link rel="stylesheet" href="/bower_components/fullpage.js/dist/jquery.fullpage.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:css styles/index.css -->
+    <link rel="stylesheet" href="styles/index.css">
     <!-- endbuild -->
     
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -26,50 +32,432 @@
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
+<nav class="navbar navbar-default resume">
     <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active">
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-        <h3 class="text-muted">htdocs</h3>
-      </div>
-
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-          <h4>Sass</h4>
-          <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
-
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand EngName" data-menuanchor="page1" href="#page1">Chirs Chen</a>
         </div>
-      </div>
-
-      <div class="footer">
-        <p>♥ from the Yeoman team</p>
-      </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right" id="menu">
+                <li data-menuanchor="page2" class="active">
+                    <a href="#page2">基本資料</a>
+                </li>
+                <li data-menuanchor="page3">
+                    <a href="#page3">專業技能</a>
+                </li>
+                <li data-menuanchor="page4">
+                    <a href="#page4">工作經歷</a>
+                </li>
+                <li data-menuanchor="page5">
+                    <a href="#page5">項目經驗</a>
+                </li>
+                <li data-menuanchor="page6">
+                    <a href="#page6">自我評價</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    
+</nav>
+<div class="guns sky">
+    <div class="clouds_one"></div>
+    <div class="clouds_two"></div>
+    <div class="clouds_three"></div>
+</div>
+<div class="pure">
+
+</div>
+<div id="resume">
+    <div class="section item-1">
+        <div class="row word">
+            <span class="resume-hide">前端工程師</span>
+            <span class="hidden-xs resume-hide">簡歷</span>
+            <span class="col-xs-12 hidden-sm hidden-md hidden-lg resume-hide">簡歷</span>
+
+            <p class="motto resume-hide hinge-sty" style="position: relative">愛技術，愛生活</p>
+            <a href="#" class="next-page ">
+                <span class="glyphicon glyphicon-chevron-down"></span>
+            </a>
+        </div>
+
+        <div class="corner1 corner">
+            <img src="images/page_home/1.png" alt=""/>
+        </div>
+        <div class="corner2 corner">
+            <img src="images/page_home/2.png" alt=""/>
+        </div>
+        <div class="corner3 corner">
+            <img src="images/page_home/3.png" alt=""/>
+        </div>
+        <div class="corner4 corner">
+            <img src="images/page_home/4.png" alt=""/>
+        </div>
+
+    </div>
+    <div class="section item-2">
+        <div class="container">
+            <h class='hidden-xs hidden-sm page2-title'>基本資料</h>
+            <div class="row">
+                <div class=" icon-infomation col-xs-6 col-sm-6 col-md-3">
+                    <img src="images/page-2/glass.png" alt="">
+                    <h4>基本信息</h4>
+                    <p>
+                        姓名: 陳冀川 男
+                        <br>
+                        年齡: 24歲 籍貫：河北
+                    </p>
+                </div>
+                <div class=" icon-infomation col-xs-6 col-sm-6 col-md-3">
+                    <img src="images/page-2/hat.png" alt="">
+                    <h4>畢業院校</h4>
+                    <p>
+                        河北聯合大學輕工學院
+                    </p>
+
+                </div>
+                <div class=" icon-infomation col-xs-6 col-sm-6 col-md-3">
+                    <img src="images/page-2/book.png" alt="">
+                    <h4>學歷和專業</h4>
+                    <p>
+                        信息自動化 本科
+                        <br>
+                        專業技能 編程
+                    </p>
+                </div>
+                <div class=" icon-infomation col-xs-6 col-sm-6 col-md-3">
+                    <img src="images/page-2/tel.png" alt="">
+                    <h4>聯繫方式</h4>
+                    <p>
+                        郵箱 chenjichuan521@sina.cn
+                        <br>
+                        電話18610982803
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="section item-3">
+        <div class="container">
+            <div class="img-3 hidden-xs">
+                <img src="images/page-3/5(2).png" alt="">
+            </div>
+            <div class="bg-img hidden-xs hidden-sm">
+                <img src="images/page-3/1(4).png" alt="">
+            </div>
+            <div class="sm-img fly hidden-xs hidden-sm">
+                <img src="images/page-3/2(3).png" alt="">
+            </div>
+
+
+            <div class="skill-introduce">
+                <div class="media">
+                    <div class="media-left media-top">
+                        <a href="#" class=''>
+                            <img class="media-object" src="images/page-3/tv8.png" alt="">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">PC端</h4>
+                        <p>
+                            熟練使用 Html5 Css3 JavaScript，能夠合理完成web端或者移動端頁面的編寫和維護，<br>
+                            思路清晰，結構完整，易於維護和持久化開發，能處理主流瀏覽器兼容問題。
+                            熟練使用原生js, 瞭解js面向對象原理，閉包以及原型結構，能夠合理利用面向對象以及模塊化開發,並且能適當完成框架封裝。熟練使用 jQuery，並能完成相關項目。
+                            <br>熟悉animation fullpage jquery-ui template lazyload jQeasing masonry等實用插件的應用,輪播圖，tab欄，瀑布流，延遲加載，全屏滾動等等常用功能的實現
+                            <br>掌握 Ajax交互原理，根據後臺接口能夠合理完成前後臺交互，數據的增刪改查
+
+
+
+                        </p>
+
+                    </div>
+                </div>
+                <div class="media ">
+                    <div class="media-left media-top">
+                        <a href="#" class=''>
+                            <img class="media-object" src="images/page-3/apple6.png" alt="">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">手機端</h4>
+                        <p>熟練使用zepto.js，Frozen ui，Amaze ui等移動框架進行移動頁面的開發
+                            <br>掌握 移動端編程，會基於流式佈局以及 響應式佈局 開發基於移動端的頁面。
+                            <br>熟練使用Bootstrap 框架以及輕量級框架 zepto 的使用。
+                        </p>
+
+                    </div>
+                </div>
+                <div class="media ">
+                    <div class="media-left media-top">
+                        <a href="#" class=''>
+                            <img class="media-object" src="images/page-3/baterry10.png" alt="">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">其他</h4>
+                        <p>掌握 angularJS 框架原理，可以完成無需刷新的單頁面應用
+                            <br>瞭解Node.js 的工作原理會使用npm、bower環境
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills hidden-xs">
+                <span class="subject-9">Zepto</span>
+                <span class="subject-2">Bootstrap</span>
+                <span class="subject-3">CANVAS</span>
+                <span class="subject-4">jQuery</span>
+                <span class="subject-10">Angular</span>
+                <span class="subject-5">移動端</span>
+                <span class="subject-6">CSS3</span>
+                <span class="subject-7">響應式</span>
+                <span class="subject-8">Nodejs</span>
+                <span class="subject-1">HTML5</span>
+            </div>
+        </div>
+    </div>
+    <div class="section item-4" id='item-4'>
+        <div class="container">
+            <span class='title hidden-xs  hidden-sm' style='display: inline-block'>個人經歷</span>
+            <span class='sign col-xs-12 hidden-xs  hidden-sm' style='font-size: 20px'>熱愛技術,專注用戶體驗</span>
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="images/page-4/school.jpg" class=' img-circle team-img' alt="">
+                        <div class="caption">
+                            <h3>河北聯合大學輕工學院</h3>
+                            <p>信息科學與技術</p>
+                            <p>主要學習編程語言，底層驅動開發</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="images/page-4/lingyang.jpg" class='img-circle team-img' alt="">
+                        <div class="caption">
+                            <h3>凌陽愛普</h3>
+                            <p>嵌入式開發</p>
+                            <p>Linux 編程語言，C數據結構和算法，網絡開發</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="images/page-4/anjie.jpg" class='img-circle team-img' alt="">
+                        <div class="caption">
+                            <h3>北京安傑信息科技</h3>
+                            <p>前端工程師</p>
+                            <p>互聯網電商行業的網站開發，移動端開發，以及接部分外包項目</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="images/page-4/dayang.jpg" class='img-circle team-img' alt="">
+                        <div class="caption">
+                            <h3>北京中科大洋信息</h3>
+                            <p>web前端工程師</p>
+                            <p>媒資系統和新媒體系統以及全媒體平臺web頁面的開發</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="section item-5">
+        <!--第一屏-->
+        <div class="slide hidden-xs">
+            <div class="container" id='container-img'>
+                <div class="row">
+                    <div class="portfolio-items">
+                        <div class="col-sm-6 col-md-3 col-lg-3 web">
+                            <div class="portfolio-item">
+                                <div class="hover-bg">
+                                    <div class="hover-text">
+                                        <h4><a href='#' target='_blank' title="智能家居"></a>智能家居</h4>
+                                        <small>技術：html+css+js</small>
+                                        <i class="fa fa-search"></i></div>
+                                    <img src="img/01.jpg" class="img-responsive" alt="智能家居">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3 col-lg-3">
+                            <div class="portfolio-item">
+                                <div class="hover-bg">
+                                    <div class="hover-text">
+                                        <h4><a href="http://www.ourangel.cn/" target='_blank' title="安傑">安傑</a></h4>
+                                        <small>技術：HTML+CSS+JQuery</small>
+                                    </div>
+                                    <img src="img/02.jpg" class="img-responsive" alt=""></div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3 col-lg-3">
+                            <div class="portfolio-item">
+                                <div class="hover-bg">
+                                    <div class="hover-text">
+                                        <h4><a href="http://wealth.jrq.com" target='_blank' title="金融圈">金融圈</a></h4>
+                                        <small>技術：Bootstrap+JQuery</small>
+                                    </div>
+                                    <img src="img/03.jpg" class="img-responsive" alt="金融圈"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3 col-lg-3">
+                            <div class="portfolio-item">
+                                <div class="hover-bg">
+                                    <div class="hover-text">
+                                        <h4><a href='javascript:;' target='_blank' title=""></a>電商活動頁面</h4>
+                                        <small>技術：Bootstrap+JQuery</small>
+                                    </div>
+                                    <img src="img/04.jpg" class="img-responsive" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-3">
+                            <div class="portfolio-item">
+                                <div class="hover-bg">
+                                    <div class="hover-text">
+                                        <h4><a href='javascript:;' target='_blank' title=""></a>裝飾用</h4>
+                                        <small>技術：HTML+CSS+JQuery</small>
+                                    </div>
+                                    <img src="img/05.jpg" class="img-responsive" alt="裝飾用">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-3">
+                            <div class="portfolio-item">
+                                <div class="hover-bg">
+                                    <div class="hover-text">
+                                        <h4><a href="javascript:;" target='_blank' title="D"></a>裝飾用</h4>
+                                        <small>技術：Bootstrap+JQuery</small>
+                                    </div>
+                                    <img src="img/06.jpg" class="img-responsive" alt="裝飾用"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-3">
+                            <div class="portfolio-item">
+                                <div class="hover-bg">
+                                    <div class="hover-text">
+                                        <h4><a href="javascript:;" target='_blank' title="個人博客">個人博客</a></h4>
+                                        <small>技術：HTMl+CSS+JS+Wordpress</small>
+                                    </div>
+                                    <img src="img/07.jpg" class="img-responsive" alt="個人博客"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-3">
+                            <div class="portfolio-item">
+
+                                <div class="hover-bg">
+                                    <div class="hover-text">
+                                        <h4><a href='javascript:;' target='_blank' title="軟裝大師">軟裝大師 </a></h4>
+                                        <small>技術：Bootstrap+JQuery</small>
+                                    </div>
+                                    <img src="img/08.jpg" class="img-responsive" alt="軟裝大師">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--第二屏-->
+        <div class="slide">
+            <div class="rotator">
+                <div id="rot1">
+                    <img src="" width="800" height="300" class="bg" alt=""/>
+                    <div class="heading">
+                        <h1></h1>
+                    </div>
+                    <div class="description">
+                        <p></p>
+                    </div>
+                </div>
+                <ul id="rotmenu">
+                    <li>
+                        <a href="#">Flappy Bird</a>
+                        <div style="display:none;">
+                            <div class="info_image">1.jpg</div>
+                            <div class="info_heading">Flappy Bird</div>
+                            <div class="info_description">
+                                通過面向對象封裝方法，利用canvas繪製。
+                                手機可以玩。
+                                <br><a href="http://chenjichuan.cn/bird.html" target= _blank class="more">play</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">cart</a>
+                        <div style="display:none;">
+                            <div class="info_image">2.jpg</div>
+                            <div class="info_image">Add to cart</div>
+                            <div class="info_description">
+                                電商的添加到購物車模型，符合大部分電商場景
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Fall</a>
+                        <div style="display:none;">
+                            <div class="info_image">3.jpg</div>
+                            <div class="info_description">
+                               瀑布流佈局，同時具備響應式，延遲加載等提高用戶體驗場景。
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">view</a>
+                        <div style="display:none;">
+                            <div class="info_image">4.jpg</div>
+                            <div class="info_heading">view</div>
+                            <div class="info_description">
+                                有趣兒的小東西，添加大圖後可以實現全景瀏覽
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Full page</a>
+                        <div style="display:none;">
+                            <div class="info_image">5.jpg</div>
+                            <div class="info_description">
+                                主流的商家活動推廣頁面應用場景，全屏瀏覽同時，分頁分屏展示。
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="section item-6">
+        <h1>Focus Me</h1>
+        <div class="word">
+        <p>
+            有責任，工作踏實，性格開朗樂觀，積極上進。
+        </p>
+        </div>
+    <div class="word">
+        <p>
+           易和人相處，擁有良好的親和力。<br>
+        </p>
+    </div>
+    <div class="word">
+        <p>
+            喜歡js，非常熱愛編程，喜歡鑽研新的技術，</br>具有很強的自學能力和良好的學習方法，喜歡研究各種新的框架。
+        </p>
+    </div>
+        <div class="top"></div>
+        <div class="foot"></div>
+    </div>
+</div>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -84,6 +472,10 @@
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
+    <script src="/bower_components/easing/easing.js"></script>
+    <script src="/bower_components/isotope/dist/isotope.pkgd.min.js"></script>
+    <script src="/bower_components/jquery-ui/jquery-ui.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
@@ -104,6 +496,10 @@
     
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/resume.js -->
+    <script src="scripts/resume.js"></script>
     <!-- endbuild -->
   </body>
 </html>
