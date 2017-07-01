@@ -3,7 +3,7 @@
  */
 var project_info  = function () {
 
-//        当前活动标签
+// 當前活動標籤
   var current = 1;
 
   display($('#rotmenu li:first'));
@@ -21,10 +21,10 @@ var project_info  = function () {
         $(this).animate({'opacity': '0.7'}, 700);
       });
 
-    //重置当前current
+    //重置當前current
     current = parseInt($this.index() + 1);
 
-    // 把a往外移动效果显示
+    // 把a往外移動效果顯示
     var elem = $('a', $this);
     elem.stop().animate({'marginRight': '0px', 'opacity': '1.0'}, 300);
 

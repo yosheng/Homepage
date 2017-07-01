@@ -65,7 +65,7 @@ $(function() {
 
             $('item-4').css('background', 'rgba(255, 255, 255, .1)');
             //側邊導航事件
-            var Tooltips = ['個人簡歷', '基本資料', '專業技能', '工作經歷', '項目經驗', '自我評價'];
+            var Tooltips = ['個人簡歷', '基本資料', '個人成就', '工作經歷', '實務經驗', '展望未來'];
             $("#fp-nav ul li").each(function(index) {
                 this.dataset['toggle'] = 'tooltip';
                 this.dataset['placement'] = 'left';
@@ -149,7 +149,6 @@ $(function() {
 
         // 滾動結束後回調
         afterLoad: function(anchorLink, index) {
-            // console.log('滾動結束後回調' + index);
             if (index == 6)
                 $('.pure').show();
 
@@ -170,7 +169,7 @@ $(function() {
                     $('.navbar').addClass('blue');
                     $('.item-3 .container').show();
                     break;
-                    
+
                 case 'page4':
                     $('.item-4 .container').show();
                     break;
