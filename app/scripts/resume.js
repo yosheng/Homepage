@@ -28,8 +28,15 @@ $(function() {
 
     project_info();
 
+    // slideBox
+    $('#demo1').slideBox();
 
-
+    // bxslider
+    $('.bxslider').bxSlider({
+        auto: true,
+        mode: 'fade',
+        captions: true
+    });
 
     $('#resume').fullpage({
         sectionsColor: ['transparent', 'transparent', '#e4e4e4', 'rgba(255, 255, 255, .0)', 'transparent', 'transparent'],
@@ -102,7 +109,7 @@ $(function() {
                 $('.item-6 .foot').animate({ 'height': '50%' }, 400);
             }
 
-            console.log('滾動觸發後結束前回調' + index);
+            // console.log('滾動觸發後結束前回調' + index);
             switch (index) {
                 case 1:
                     $('.item-1 .corner').hide();
@@ -128,20 +135,21 @@ $(function() {
                     break;
 
                 case 4:
-                    {
-                        $('.item-4 .container').hide();
-                        break;
-                    }
-                case 6:
-                    {
+                    $('.item-4 .container').hide();
+                    break;
 
-                    }
+                case 5:
+                    $('.navbar').removeClass('black');
+                    break;
+
+                case 6:
+                    break;
             }
         },
 
         // 滾動結束後回調
         afterLoad: function(anchorLink, index) {
-            console.log('滾動結束後回調' + index);
+            // console.log('滾動結束後回調' + index);
             if (index == 6)
                 $('.pure').show();
 
@@ -151,23 +159,24 @@ $(function() {
                     $('.resume-hide').show();
                     $('.navbar').addClass('black');
                     break;
+
                 case 'page2':
                     $('.item-2 .container').show();
-                    console.log('item-2 show');
-                    var result =  $('.item-2 .container:nth-child(3)');
-                    console.log(result);
+                    var result = $('.item-2 .container:nth-child(3)');
                     $('.item-2 .container:nth-child(4)').css("opacity", "0");
                     break;
+
                 case 'page3':
                     $('.navbar').addClass('blue');
                     $('.item-3 .container').show();
-
                     break;
+                    
                 case 'page4':
                     $('.item-4 .container').show();
                     break;
 
                 case 'page5':
+                    $('.navbar').addClass('black');
                     break;
 
                 case 'page6':
@@ -190,6 +199,4 @@ $(function() {
         // 水平滑塊回調
         afterSlideLoad: function(anchorLink, index, slideIndex) {}
     })
-
-
 })

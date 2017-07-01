@@ -1,0 +1,88 @@
+
+// page-5
+.fp-controlArrow.fp-prev {
+    -webkit-animation: shake 2s ease ;
+    animation: shake 2s ease ;
+
+}
+
+.fp-controlArrow.fp-next {
+    -webkit-animation: shake 2s ease ;
+    animation: shake 2s ease ;
+    -webkit-animation-delay: .5s;
+}
+
+.item-5 .container {
+    margin-top:50px;
+}
+
+.isotope, .isotope .isotope-item {
+    /* change duration value to whatever you like */
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope-item {
+    margin-right: -1px;
+    font-size: 12px;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+.portfolio-item:hover {
+    margin-bottom: 30px;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.portfolio-item .hover-bg {
+    height: 260px;
+    overflow: hidden;
+    position: relative;
+}
+.hover-bg .hover-text {
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.66);
+    padding: 25% 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.hover-bg .hover-text>h4 {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    transition: all 0.3s;
+}
+.hover-bg:hover .hover-text>h4 {
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+.hover-bg .hover-text>i {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    transition: all 0.3s;
+}
+.hover-bg:hover .hover-text>i {
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+.hover-bg:hover .hover-text {
+    opacity: 1;
+}
+
+/****************************************************第二瓶********************************************/
+.bxslider img {
+  margin: 0 auto;
+}
