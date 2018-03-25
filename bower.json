@@ -26,6 +26,12 @@
         "./dist/isotope.pkgd.min.js"
       ],
       "dependencies": {}
+    },
+    "components-font-awesome": {
+      "main": [
+        "fonts/*",
+        "scss/font-awesome.scss"
+      ]
     }
   },
   "devDependencies": {
